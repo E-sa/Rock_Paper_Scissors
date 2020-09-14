@@ -1,0 +1,89 @@
+// scorebox 
+
+
+.scoreBox{
+
+    position: fixed;
+    right: 20px;
+
+    flex-direction: column;
+    width: 18%;
+    // width: 50%;
+    border: 2px solid rgb(77,93,119);
+    border-radius: 9px;
+    padding: 15px;
+    box-sizing: border-box;
+
+
+    float: right;
+    margin-right: 20px;
+    margin-top: 20px;
+
+    h1{
+        color: white;
+        font-size: 23px;
+        margin: auto 0;
+        margin-bottom: 5px;
+    }
+
+    div{
+        background-color: white;
+
+        width: auto;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        p{
+            color: #7F88BF;
+            font-size: 14px;
+            margin-bottom: 0;
+
+        }
+
+        h2{
+
+            color: #565468;
+            margin-top: 0px;       
+            font-weight: bold;
+            font-size: 43px;
+         }
+    }
+}
+
+
+@media only screen and (max-width: 450px){
+
+    .scoreBox{
+        flex-direction: row;
+        width: 50%;
+        float: none;
+        
+        margin: 0 auto;
+        margin-top: 20px;
+
+        h1{
+            font-size: 4vw;
+        }
+
+        div{
+            width: 30%;
+
+            p{
+                font-size: 15px;
+            }
+
+            h2{
+                font-size: 35px;
+            }
+
+            
+        }
+
+    }
+
+
+}
+

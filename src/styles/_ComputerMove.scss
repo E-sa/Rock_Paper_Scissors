@@ -1,0 +1,55 @@
+// grey circles and its animation
+
+
+@mixin each{
+
+    @include circle();
+    @include img();
+
+    position: fixed;
+    top: -150px;
+    left:30%; 
+    border: 12px solid grey;
+
+}
+
+.computerMove{
+    
+    .paper-grey{
+
+        @include each();
+        margin-right: 10px;
+
+    }
+
+    .sci-grey{
+
+        @include each();
+
+    }
+
+    .rock-grey{
+
+        @include each();
+        margin-right: 10px;
+
+    }
+
+}    
+
+#move-animation2 {
+
+    display:flex ;
+    position: fixed;
+    animation-name: example2;
+    animation-duration: 2s;  
+    animation-fill-mode: both;
+  
+  }
+  
+  @keyframes example2 {
+  
+    from {left:30%; top:-10px}
+    to {left:30%; top:calc( 50% - 100px) }
+  }
+  
