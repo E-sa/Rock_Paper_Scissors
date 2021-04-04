@@ -1,0 +1,109 @@
+// rule button and its picture
+
+
+.rules{
+
+
+    button{
+        width: 100px;
+        box-sizing: border-box;
+
+        border: solid white 2px;
+        color: white;
+        border-radius: 5px;
+        background-color: transparent;
+
+        padding: 0px 27px;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+
+    }
+
+
+
+
+
+
+        div{
+
+            width: 30vw;
+            height: 30vw;
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            margin-left: -15vw;
+            margin-top:-15vw;
+
+            border-radius: 7px;
+            background-color: white;
+
+            text-align: center;
+
+            -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+            -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+            box-sizing: border-box;         /* Opera/IE 8+ */
+
+            padding: 20px;
+
+
+            h1{
+                margin: 0;
+                margin-bottom: 7px;
+                color: #14173A;
+                font-size: 4vw;
+                float: left;
+
+            }
+    
+            img{
+                // width: 25vw;
+                width: 20vw;
+                height: auto;
+            }
+
+        
+
+
+ 
+
+        }
+
+    }
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 450px){
+    .rules{
+        button{
+            left: 50%;
+            margin-left: -50px; /* Negative half of width. */
+        }
+
+        div{
+            width: 80vw;
+            height: 60vw;
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            margin-left: -40vw;
+            margin-top:-40vw;
+
+            h{
+                display: inline;
+            }
+            img{
+
+                width: 50vw;
+                height: auto;
+
+            }
+        }
+    }
+
+}
